@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>art101</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT ––––––––––––––––––––––––––––––––––––––––------–––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS & JS –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>  
+    <script type="text/javascript" src="css/overlaypopup.js"> </script>  
+    <!--<script type="text/javascript"  src="tinkerbell.js"></script>-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- NAVIGATION AT the TOP is Here-->
+
+    <nav class="navbar">
+      <div class="container nav_pad">  
+        <ul>
+          <li><a class="navbar-link" href="index.html">Main</a></li>
+          <li><a class="navbar-link" href="p1.html"> Project Set 1</a></li>
+          <li><a class="navbar-link" href="p2.html"> Project Set 2</a></li>
+          <li><a class="navbar-link" href="p3.html"> Project Set 3</a></li>
+          <li><a class="navbar-link" href="p4.html"> Project Set 4</a></li>
+          <li><a class="navbar-link" href="betterTriangles.html"> Better Triangles</a></li>
+          <li><a class="navbar-link" href="part_log.html">Participation Log</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <h6>Art 101, Sec 02 - Fall 2024</h6>
+
+      <div class="row section">
+        <header id="header" class="twelve columns">
+          <h3>Daria Orlova - Project Set 1</h3>
+
+          <div class="statement_text"> 
+            <img src="images/fun/bookworm.gif" align="left" height="72" style="margin-right:20px"/>
+            <em>
+              “Normal people certainly are wise, aren’t they?”
+              <br>”No, you are simply a fool”.
+              <br> - Myne and Ferdinand, Ascendance of a Bookworm
+            </em>
+            <br>
+
+          </div>
+
+        </header>
+      </div>
+
+
+      <!-- NOTE!: For each row section make sure your column divs add up to 12. so 4+8, 6+6, 2+10, etc.-->
+
+      <!-- Start Row //// -->
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns" >
+
+          <a href="p5_code/exercise_1/index.html" > <img src="images/ex1.png" class="u-full-width "/>   </a>
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="ex1"> Exercise 1</h5>
+          <p>
+            This is the first exercise completed for class where I experimented with using basic drawing functions
+            such as <i>rect()</i>, <i>triangle()</i>, <i>ellipse()</i>; as well as, learning new functions: <i>line()</i> and <i>point()</i>. Each 
+            function is called when a certain condition is met, and it was a puzzle to figure out how to create 
+            4 different states that the canvas would appear in: Triangle Idle, Ellipse Follow, Line Grid Follow, 
+            and Point & Rect Idle.<br>
+            Each state was achieved through the use of conditions that checked the values of global variables such
+            as <i>mouseX</i>, <i>mouseY</i>, and the canvas' <i>width</i> or <i>height</i>. The behavior of each state would depend on similar
+            changing counters and the statistics of the generated "wallpaper" over time is tracked through <i>console.log()</i> prints.
+
+            <br><p></p>
+            <a href="p5_code/exercise_1/index.html" >Run Exercise 1</a> <br>
+            <a href="p5_code/exercise_1/sketch.js">See code for Exercise 1</a> <br>
+          </p> 
+        </div>
+
+
+        <!--////  End of row section-->
+      </div>
+
+      <!-- Start Row //// -->
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns" >
+
+          <a href="p5_code/exercise_2/index.html" > <img src="images/ex2.png" class="u-full-width "/>   </a>
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="ex2">Exercise 2</h5>
+          <p>
+            In this second exercise, I created an interactive game mimicking the classic "Snake" where the user
+            controls a worm traveling across a grid to eat various fruits. I experimented with many different
+            global variables that tracked the position of multiple fruits on the grid and whether the worm's head 
+            collided with them. If the worm eats, it prints some text that says "NOM!" and the fruit is randomly
+            generated at a new location. If the worm goes too long without eating a certain fruit, it starts to 
+            complain to the user. <br>
+            The game also tracks the user's key presses and mouse movements to execute different effects using
+            global variable states such as <i>keyIsPressed</i>, <i>mouseIsPressed</i> and functions such as <i>mouseMoved()</i>. Through 
+            this, the game has extra cosmetic interactivity to make it more visually interesting. Changes in
+            variable states and counters are also pushed to <i>console.log()</i>.
+
+            <br><p></p>
+            <a href="p5_code/exercise_2/index.html" >Run Exercise 2</a> <br>
+            <a href="p5_code/exercise_2/sketch.js">See code for Exercise 2</a> <br>
+          </p> 
+
+        </div>
+
+
+        <!--////  End of row section-->
+      </div>
+
+
+
+
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns" >
+
+          <a href="p5_code/project_1/index.html" > <img src="images/p1_images/img1.jpg" class="u-full-width"/>   </a>
+
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="p1"> Project 1</h5>
+          <p>
+            For Project 1, I worked off of the paint program template to create a program that allows the 
+            user to create and save their own works of art made in the browser. <br>    
+            There are 3 different algorithmic brushes available that can be used in various ways to achieve
+            a psychedelic masterpiece. There is a brush that generates a continously rotating line around the
+            position of the mouse, a rainbow-shifting triangular brush, and a spotted inverted brush that interacts
+            with the colors already present on the canvas. With this, a surreal artpiece can be easily created by varying
+            the size of the brush as well and creatively using the solid and translucent eraser tools. <br>
+          </p><p>
+              The behavior of the brushes that I created were a very engaging challenge. 
+              I believe that I effectively made a fun program for users to play with and make art that interacts reflectively with them.
+              The basics of a drawing program are there: making a mark, erasing marks, and recording your created piece.
+            <br>
+            What I found most challenging about this project was deciding upon the algorithmic behavior 
+            of my brushes and being able to execute what I had imagined them to be. I really had to explore the p5.js documentation to find what
+            I needed and then experiment thoroughly with what I thought would work. I specifically learned how different 
+            transformative functions, like <i>rotate()</i>, need a <i>translate()</i> function to function with the coordinates I wanted 
+            the drawn shapes to be placed at. I also explored <i>blendMode()</i> and how <i>DIFFERENCE</i> and <i>BLEND</i> change the way drawn shapes
+            affect the canvas well. 
+          </p><p>
+            <a href="p5_code/project_1/index.html" >Run Project 1</a> <br>
+            <a href="p5_code/project_1/sketch.js">Code for Project 1</a> <br>
+          </p> 
+
+        </div>
+
+
+        <!--////  End of row section-->
+      </div> 
+
+
+
+      <div class="row section">   
+
+        <div class="six columns" >
+
+          Image 1 <a href="images/p1_images/img1.jpg" > <img src="images/p1_images/img1.jpg" class="u-full-width"/>  </a>
+          Image 3 <a href="images/p1_images/img3.jpg" > <img src="images/p1_images/img3.jpg" class="u-full-width"/>  </a> <br>
+
+        </div>
+
+        <div class="six columns" >
+          Image 2 <a href="images/p1_images/img2.jpg" > <img src="images/p1_images/img2.jpg" class="u-full-width"/>  </a> 
+          Image 4 <a href="images/p1_images/img4.jpg" > <img src="images/p1_images/img4.jpg" class="u-full-width"/>  </a> <br>
+
+
+        </div>
+      </div>
+
+
+      <div class="row section">   
+
+        <div class="twelve columns" >
+
+          Tiled Panel <a href="images/p1_images/tile.jpg" > <img src="images/p1_images/tile.jpg" class="u-full-width"/>  </a> <br>
+
+
+
+        </div>
+
+
+      </div>
+
+      <!-- end of MAIN container /////////////////-->
+
+    </div>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>art101</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT ––––––––––––––––––––––––––––––––––––––––------–––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS & JS –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>  
+    <script type="text/javascript" src="css/overlaypopup.js"> </script>  
+    <!--<script type="text/javascript"  src="tinkerbell.js"></script>-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- NAVIGATION AT the TOP is Here-->
+
+    <nav class="navbar">
+      <div class="container nav_pad">  
+        <ul>
+          <li><a class="navbar-link" href="index.html">Main</a></li>
+          <li><a class="navbar-link" href="p1.html"> Project Set 1</a></li>
+          <li><a class="navbar-link" href="p2.html"> Project Set 2</a></li>
+          <li><a class="navbar-link" href="p3.html"> Project Set 3</a></li>
+          <li><a class="navbar-link" href="p4.html"> Project Set 4</a></li>
+          <li><a class="navbar-link" href="betterTriangles.html"> Better Triangles</a></li>
+          <li><a class="navbar-link" href="part_log.html">Participation Log</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <h6>Art 101, Sec 02 - Fall 2024</h6>
+
+      <div class="row section">
+        <header id="header" class="twelve columns">
+          <h3>Daria Orlova - Project Set 2</h3>
+
+          <div class="statement_text"> 
+            <img src="images/fun/whis-heart.gif" align="left" height="50" style="margin-right:20px"/>
+            <em>
+              "There's always a voice inside me that says, 'Things won't go that smoothly.'"
+              <br> - Shizuku Tsukishima, Whisper of the Heart
+            </em>
+            <br>
+
+          </div>
+
+        </header>
+      </div>
+
+
+      <!-- NOTE!: For each row section make sure your column divs add up to 12. so 4+8, 6+6, 2+10, etc.-->
+
+      <!-- Start Row //// -->
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns" >
+
+          <a href="p5_code/exercise_3/index.html" > <img src="images/ex3.png" class="u-full-width "/>   </a>
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="ex3"> Exercise 3 </h5>
+          <p>
+            For Exercise 3, I decided to recreate the Roomba, the vacuum robot, as my creature.
+            <br>
+            The roombas are drawn using the <i>ellipse()</i> and <i>arc()</i> functions and can have modular accessories added to them, also made with
+            vector-based graphics. The tables that can be seen in the room also function as another "creature" with options to have a table setting
+            or bouquet placed on top. 
+            <br> This behavior was achieved using a parent-child function hierarchy:<br>
+            <b>Parent Functions</b> - <i>doRoomba()</i>, <i>doAddTable()</i><br>
+            <b>Child Functions</b> - <i>doAddSpoon()</i>, <i>doAddKnife()</i>, <i>doAddHat()</i>, <i>doAddPlate()</i>, <i>doAddFlower()</i><br>
+            The child functions of <i>doAddSpoon()</i> and <i>doAddKnife()</i> are shared between <i>doRoomba()</i> and <i>doAddTable()</i>.<br>
+            <br>
+            As the program runs, the Roombas travel and bounce across the digital living room. The first two roombas generated are also 
+            able to interact and bounce off of each other. This was achieved through utilizing <i>translate()</i> and a custom <i>move()</i> function 
+            that would change the position determined by individual x and y-axis speed variables for each roomba. These speeds are also used 
+            in a <i>atan2()</i> calculation inside <i>doRoomba()</i> to <i>rotate()</i> the creature to face "forward" as if it is looking ahead while it moves. Both the roombas 
+            and the tables also have options in their function parameters to change the scale. <i>scale()</i> is also used to reflect the accessories on the roombas to 
+            display on the opposite sides.
+
+            <br><p></p>
+            <a href="p5_code/exercise_3/index.html" >Run Exercise 3</a> <br>
+            <a href="p5_code/exercise_3/sketch.js">See code for Exercise 3</a> <br>
+          </p> 
+        </div>
+
+
+        <!--////  End of row section-->
+      </div>
+
+      <!-- Start Row //// -->
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns" >
+
+          <a href="p5_code/exercise_4/index.html" > <img src="images/ex4.png" class="u-full-width "/>   </a>
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="ex4">Exercise 4</h5>
+          <p>
+            For this exercise, I converted my creature (Roomba) to a Class Object with its own action methods that could be 
+            called to manipulate its behavior on the canvas. I displayed a crowd of these creatures on the canvas by creating an array <i>roombas</i>, that held all my Roomba objects. 
+            The constructor my Roomba Class only asks for a color() object, name string, scale size and item string. The position, speed, 
+            and other properties are determined through random() or calculations using the scale given and inherent size of a Roomba object.
+            The display methods for my Roomba class are: <i>update()</i>, <i>addHat()</i>, <i>addKnife()</i>, <i>addSpoon()</i>, and <i>toString()</i>. The action methods are: 
+            <i>setColor()</i>, <i>setAngle()</i>, <i>dance()</i>, <i>rainbow()</i>, <i>move()</i>.<br>
+            <br>
+            I also added 4 other creature Classes from my classmates: Amogus (by Dat) dgCentipede21 (by David), ibgFace (by Lyndon), and Kirby (by Angie). These creatures were also 
+            spawned using Arrays and for loops to hold 15 of each type. I then used each creatures' display method and any action methods if available to have them move on the canvas.
+
+            <br><p></p>
+            <a href="p5_code/exercise_4/index.html" >Run Exercise 4</a> <br>
+            <a href="p5_code/exercise_4/sketch.js">See code for Exercise 4</a> <br>
+            See Code Files for Classes: 
+            <a href="p5_code/exercise_4/amogus.js">Amogus</a>, 
+            <a href="p5_code/exercise_4/Centipede.js">Centipede</a>, 
+            <a href="p5_code/exercise_4/ibgFace.js">ibgFace</a>, 
+            <a href="p5_code/exercise_4/DO_roomba.js">Roomba</a>, and 
+            <a href="p5_code/exercise_4/Kirby.js">Kirby</a>
+          </p> 
+
+        </div>
+
+
+        <!--////  End of row section-->
+      </div>
+
+
+        <!-- The column for showing the image and the link-->
+      <div class="row section">
+        <div class="four columns" >
+
+          <a href="video/p2.mp4" ><img src="images/p2_images/p2.png" class="u-full-width"/></a>
+
+        </div> 
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">    
+          <h5 id="p2"> Project 2</h5>
+          <p>
+            For Project 2, I combined the Flocking algorithm with the Recursive Tree and my own Blooming 
+            animation to create a branching and weaving visual. The animation begins with a slowly growing 
+            tree that then releases elliptical creatures to flock around the canvas. Floral patterns bloom 
+            in the background during these first two acts. In the third act, the creatures start to leave a 
+            permanent trail and weave together their paths of travel almost filling the space completely. In 
+            the fourth and final act, the creatures become colorful, grow in size and speed. They flock back 
+            together and create a river of rainbow hue to finish the animation. The background music comes from 
+            <a href="https://ncs.io/timeline">OBLVYN - A Mere Blip In Your Timeline released by NoCopyrightSounds</a><br>
+            I reworked each algorithm from p5.js into its own class: 
+            <a href="https://archive.p5js.org/examples/simulate-recursive-tree.html">Recursive Tree</a> - <i>doTree()</i>, <a href="https://archive.p5js.org/examples/simulate-flocking.html">Flocking</a> - <i>doFlock()</i> and <i>doBoids()</i>.<br>    
+            <i>Bloom()</i> depends on direct canvas elements and can be seen in the <a href="p5_code/project_2/sketch.js">sketch.js</a> code.<br>
+          </p><p>
+            Figuring out how to convert the algorithms to classes that I could use was an interesting challenge, 
+            especially with the Flocking program because it uses a <i>.prototype</i> declaration in its original source. 
+            The iterative process to find a generated visual was new to me as well, because it is difficult to tell 
+            if the current run of the code will have a good result until the very end. I ended up running it at least 10 
+            times before settling on this result.
+            <br>
+            The most challenging portion of this project was coming up with a way to combine the code in an interesting 
+            way while also trying to understand what the code is also doing. For Flocking, each Boid (bird-like object) had 
+            was controlled with 10 different methods alone. I also wanted to try and plot the end points of the Recursive 
+            Tree to have the Boids spawn in from there in the second act, but recording and tracking the transformations 
+            turned out to be a much more complicated mathematical process that I was not able to finish. Instead, I simulated the Boids spawning 
+            off the points on the Tree through a parabola calculation that roughly follows the tree canopy.
+          </p><p>
+            <a href="p5_code/project_2/index.html" >Run Project 2 (frame download disabled)</a> <br>
+            <a href="p5_code/project_2/sketch.js">sketch.js for Project 2</a> <br>
+            See Code Files for Classes: 
+            <a href="p5_code/project_2/doBoids.js">doBoids</a>, 
+            <a href="p5_code/project_2/doFlock.js">doFlock</a>, and 
+            <a href="p5_code/project_2/doTree.js">doTree</a>
+          </p> 
+
+        </div>
+
+        <!--////  End of row section-->
+      </div> 
+
+      <div class="row section">
+        <p>Complete Video</p>
+        <a href="video/p2.mp4" ><video src="video/p2.mp4" class="u-full-width"
+          loop="true" width="500" height="385" controls/></a>
+      </div>
+
+      <div class="row section">
+        <p>Preview Video</p>
+        <a href="video/frames.mp4" ><video src="video/frames.mp4.mp4" class="u-full-width"
+          loop="true" width="500" height="385" controls/></a>
+      </div>
+
+      <div class="row section">
+        <p>Progress Images</p>
+        <div class="six columns">
+          <p>First test with Flocking algorithm.
+          <img src="images/p2_images/p2-wip1.png" class="u-full-width"/></p>
+        </div>
+        <div class="five columns">
+          <p>Working on individual Bloom algorithm.
+          <img src="images/p2_images/p2-wip2.png" class="u-full-width"/></p>
+        </div>
+      </div>
+
+
+      <!-- tiled image code from Project 1 
+              vvvv
+      -->
+
+
+
+      <!-- <div class="row section">   
+
+        <div class="six columns" >
+
+          Image 1 <a href="images/p2_images/img1.jpg" > <img src="images/p2_images/img1.jpg" class="u-full-width"/>  </a>
+          Image 3 <a href="images/p2_images/img3.jpg" > <img src="images/p2_images/img3.jpg" class="u-full-width"/>  </a> <br>
+
+        </div>
+
+        <div class="six columns" >
+          Image 2 <a href="images/p1_images/img2.jpg" > <img src="images/p1_images/img2.jpg" class="u-full-width"/>  </a> 
+          Image 4 <a href="images/p1_images/img4.jpg" > <img src="images/p1_images/img4.jpg" class="u-full-width"/>  </a> <br>
+
+
+        </div>
+      </div>
+
+
+      <div class="row section">   
+
+        <div class="twelve columns" >
+
+          Tiled Panel <a href="images/p1_images/tile.jpg" > <img src="images/p1_images/tile.jpg" class="u-full-width"/>  </a> <br>
+
+
+
+        </div>
+
+
+      </div> -->
+
+      <!-- end of MAIN container /////////////////-->
+
+    </div>
+
+
+    
+  </body>
+</html>
